@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lito_quizchallenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Coding Quiz</h1>
+    </header>
+    <section id="quiz-section">
+      <div id="quiz-info">
+        <p id="TIME">TIME: <span id="timer">0</span></p>
+        <p id="color">Question: <span id="question-num">0</span></p>
+      </div>
+      <div id="question-container">
+        <h2 id="question-statement"></h2>
+        <ul id="choices"></ul>
+      </div>
+
+    </section>
+    <section id="score-section">
+      <h2>All Done!</h2>
+      <p class="score-label">Your final score is: <span class="score-value" id="final-score"></span></p>
+      <form id="initials-form">
+        <label for="initials">Enter initials:</label>
+        <input type="text" id="initials" maxlength="3" placeholder="ABC" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+  <div class="containers">
+    <div id="toggle">
+      <button id="toggle-high-scores-btn" onclick="toggleHighScores()">Toggle High Scores</button>
+    </div>
+    <section id="high-scores-section">
+      <h2>High Scores</h2>
+      <ul id="high-scores-list"></ul>
+    <button id="clear-scores-btn" onclick="clearHighScores()">Clear Scores</button>
+    </section>
+  </div>
+      <script src="script.js"></script>
+</body>
+</html>
